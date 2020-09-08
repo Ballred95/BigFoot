@@ -11,7 +11,7 @@ export default function Filters(props) {
 
    return (
    <div className=''>
-       <Chip label={props.state} onClick={handleClick} />
+       <Chip label={props.state} onClick={handleClick} style={{width: '100px', margin: '1rem'}} />
        
    </div>
    )

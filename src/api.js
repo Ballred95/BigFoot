@@ -34,7 +34,7 @@ export default class API extends Component {
     if (!this.state.loaded) {
       return <p>Loading...</p>;
     }
-    return <div className="">{this.state.data.map(item=> {
+    return <div className="container">{this.state.data.map(item=> {
         return <div>
           <Filters state={item.attributes.STATE_NAME} />
         </div>

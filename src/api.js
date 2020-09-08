@@ -1,4 +1,5 @@
 import React, {Component} from 'react' 
+import Filters from './filters'
 
 export default class API extends Component {
    constructor(props) {
@@ -34,8 +35,8 @@ export default class API extends Component {
       return <p>Loading...</p>;
     }
     return <div className="">{this.state.data.map(item=> {
-        return <div><p>{item.attributes.STATE_NAME}</p>
-                    <p>{item.attributes.Year}</p>
+        return <div>
+          <Filters state={item.attributes.STATE_NAME} />
         </div>
                 
     })}</div>;
